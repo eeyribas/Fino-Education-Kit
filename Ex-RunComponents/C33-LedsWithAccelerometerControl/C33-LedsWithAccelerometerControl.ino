@@ -27,12 +27,14 @@ void setup()
 void loop()
 {
 // Reads the accelerometer X-axis and Y-axis values and compares.
-  if (fino.ReadAccelerometerY() < -50 && fino.ReadAccelerometerX() < -50) {
+  if (fino.ReadAccelerometerY() < -50 && 
+      fino.ReadAccelerometerX() < -50) {
 // Red Led is on.
     fino.RedLedHigh();
 // Yellow Led is off.
     fino.YellowLedLow();
-  } else if (fino.ReadAccelerometerY() > 50 && fino.ReadAccelerometerX() > 50) {
+  } else if (fino.ReadAccelerometerY() > 50 && 
+             fino.ReadAccelerometerX() > 50) {
 // Red Led is off.
     fino.RedLedLow();
 // Yellow Led is on.

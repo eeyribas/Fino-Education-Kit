@@ -26,7 +26,7 @@ void loop()
 // It enables sound output from the buzzer.
     fino.StartBuzzer(1000);
 // Down button press control. If the button is pressed, the value returned is '1'.
-  } else if(fino.ButtonDownMode() == 1) {
+  } else if (fino.ButtonDownMode() == 1) {
 // It prevents sound output from the buzzer.
     fino.StopBuzzer(); 
   }      

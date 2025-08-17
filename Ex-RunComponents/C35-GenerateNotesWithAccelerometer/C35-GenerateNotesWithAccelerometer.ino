@@ -25,14 +25,18 @@ void setup()
 void loop()
 {
 // Reads the accelerometer X-axis and Y-axis values and compares.
-  if (fino.ReadAccelerometerY() > 50 && fino.ReadAccelerometerX() > 50) {
+  if (fino.ReadAccelerometerY() > 50 && 
+      fino.ReadAccelerometerX() > 50) {
 // It enables sound output from the buzzer.
     fino.StartBuzzer(150);
-  } else if (fino.ReadAccelerometerY() > 50 && fino.ReadAccelerometerX() < -50) {
+  } else if (fino.ReadAccelerometerY() > 50 && 
+             fino.ReadAccelerometerX() < -50) {
     fino.StartBuzzer(1000);
-  } else if (fino.ReadAccelerometerY() < -50 && fino.ReadAccelerometerX() > 50) {
+  } else if (fino.ReadAccelerometerY() < -50 && 
+             fino.ReadAccelerometerX() > 50) {
     fino.StartBuzzer(50);
-  } else if (fino.ReadAccelerometerY() < -50 && fino.ReadAccelerometerX() < -50) {
+  } else if (fino.ReadAccelerometerY() < -50 && 
+             fino.ReadAccelerometerX() < -50) {
     fino.StartBuzzer(500);
   } else {
 // It prevents sound output from the buzzer.
