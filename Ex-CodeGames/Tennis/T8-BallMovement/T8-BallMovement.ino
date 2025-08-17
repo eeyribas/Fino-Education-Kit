@@ -107,7 +107,6 @@ void Movement()
   int bouncing = BouncingControl();
 
   if (bouncing) {
-
     switch (direction) {
       case 0:
         direction = 4;
@@ -153,7 +152,8 @@ void Movement()
       break;
   }
  
-  if ((direction == 0 && ball_x == 0) || (direction == 4 && ball_x == 7))
+  if ((direction == 0 && ball_x == 0) || 
+     (direction == 4 && ball_x == 7))
     direction++;
   if (direction == 0 && ball_x == 7)
     direction = 7;

@@ -126,7 +126,6 @@ void Movement()
   int bouncing = BouncingControl();
 
   if (bouncing) {
-
     switch (direction) {
       case 0:
         direction = 4;

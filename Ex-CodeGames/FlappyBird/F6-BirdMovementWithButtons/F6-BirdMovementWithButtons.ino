@@ -221,7 +221,7 @@ void loop()
         break;
 
       case UP:
-        if(bird_x[0] > 0 ){
+        if (bird_x[0] > 0 ) {
           bird_x[1] = bird_x[1]-1;
           bird_x[0] = bird_x[0]-1;
         } else {
@@ -270,21 +270,21 @@ void loop()
   fino.SetDot(wall_7_x[2], wall_7_y[2], HIGH);  
 
   fino.SetDot(wall_8_x[0], wall_8_y[0], HIGH);  
-  fino.SetDot(wall_8_x[1], wall_8_y[1], HIGH);   
-  fino.SetDot(wall_8_x[2], wall_8_y[2], HIGH);   
-  fino.SetDot(wall_8_x[3], wall_8_y[3], HIGH);   
+  fino.SetDot(wall_8_x[1], wall_8_y[1], HIGH);
+  fino.SetDot(wall_8_x[2], wall_8_y[2], HIGH);
+  fino.SetDot(wall_8_x[3], wall_8_y[3], HIGH);
   fino.SetDot(wall_8_x[4], wall_8_y[4], HIGH); 
 
-  fino.SetDot(wall_9_x[0], wall_9_y[0], HIGH);  
+  fino.SetDot(wall_9_x[0], wall_9_y[0], HIGH);
   fino.SetDot(wall_9_x[1], wall_9_y[1], HIGH);   
   fino.SetDot(wall_9_x[2], wall_9_y[2], HIGH);   
   fino.SetDot(wall_9_x[3], wall_9_y[3], HIGH);   
   fino.SetDot(wall_9_x[4], wall_9_y[4], HIGH);
 
-  fino.SetDot(wall_10_x[0], wall_10_y[0], HIGH);  
-  fino.SetDot(wall_10_x[1], wall_10_y[1], HIGH);   
-  fino.SetDot(wall_10_x[2], wall_10_y[2], HIGH);   
-  fino.SetDot(wall_10_x[3], wall_10_y[3], HIGH);   
+  fino.SetDot(wall_10_x[0], wall_10_y[0], HIGH);
+  fino.SetDot(wall_10_x[1], wall_10_y[1], HIGH);
+  fino.SetDot(wall_10_x[2], wall_10_y[2], HIGH);
+  fino.SetDot(wall_10_x[3], wall_10_y[3], HIGH);
   fino.SetDot(wall_10_x[4], wall_10_y[4], HIGH); 
 
   fino.SetDot(wall_11_x[0], wall_11_y[0], HIGH);  

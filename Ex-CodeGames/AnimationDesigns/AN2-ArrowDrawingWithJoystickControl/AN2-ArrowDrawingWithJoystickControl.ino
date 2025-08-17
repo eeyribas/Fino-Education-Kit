@@ -72,20 +72,20 @@ void setup()
 void loop()
 {
 // Reads the joystick X-axis and Y-axis values
-  if(fino.ReadJoystickX() <= 300){
+  if (fino.ReadJoystickX() <= 300) {
 // The animation image is drawn on the screen.
     for (int i = 0; i < 8; i++) {
       fino.SetRow(i, up_ok[i]);
     }
-  } else if(fino.ReadJoystickX() >= 700) {
+  } else if (fino.ReadJoystickX() >= 700) {
     for (int i = 0; i < 8; i++) {
       fino.SetRow(i, left_ok[i]);
     }
-  } else if(fino.ReadJoystickY() <= 300) {
+  } else if (fino.ReadJoystickY() <= 300) {
     for (int i = 0; i < 8; i++) {
       fino.SetRow(i, right_ok[i]);
     }
-  } else if(fino.ReadJoystickY() >= 700) {
+  } else if (fino.ReadJoystickY() >= 700) {
     for (int i = 0; i < 8; i++) {
       fino.SetRow(i, down_ok[i]);
     }

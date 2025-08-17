@@ -54,16 +54,20 @@ void setup()
 void loop()
 {
 // The game is played using buttons and using buzzer.
-  if (fino.ButtonLeftMode() == 1 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
+  if (fino.ButtonLeftMode() == 1 && fino.ButtonRightMode() == 0 && 
+      fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
     direction = LEFT;
     fino.StartBuzzer(1000);
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 1 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 1 && 
+             fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
     direction = RIGHT;
     fino.StartBuzzer(100);
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 1 && fino.ButtonDownMode()== 0) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && 
+             fino.ButtonUpMode() == 1 && fino.ButtonDownMode()== 0) {
     direction = UP;
     fino.StartBuzzer(600);
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 1) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && 
+             fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 1) {
     direction = DOWN;
     fino.StartBuzzer(300);
   }

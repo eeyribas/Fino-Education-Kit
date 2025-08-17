@@ -62,19 +62,23 @@ void setup()
 void loop()
 {
 // The game is played using buttons and using leds.
-  if (fino.ButtonLeftMode() == 1 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
+  if (fino.ButtonLeftMode() == 1 && fino.ButtonRightMode() == 0 && 
+      fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
     direction = LEFT;
     fino.RedLedHigh();
     fino.YellowLedLow();
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 1 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 1 && 
+             fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 0) {
     direction = RIGHT;
     fino.RedLedHigh();
     fino.YellowLedLow();
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 1 && fino.ButtonDownMode()== 0) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && 
+             fino.ButtonUpMode() == 1 && fino.ButtonDownMode()== 0) {
     direction = UP;
     fino.RedLedLow();
     fino.YellowLedHigh();
-  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 1) {
+  } else if (fino.ButtonLeftMode() == 0 && fino.ButtonRightMode() == 0 && 
+             fino.ButtonUpMode() == 0 && fino.ButtonDownMode()== 1) {
     direction = DOWN;
     fino.RedLedLow();
     fino.YellowLedHigh();

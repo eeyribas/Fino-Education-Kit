@@ -62,7 +62,7 @@ void loop()
   if (fino.ButtonLeftMode() == 1) {
     direction = LEFT;
     delay(10);
-  } else if(fino.ButtonRightMode() == 1) {
+  } else if (fino.ButtonRightMode() == 1) {
     direction = RIGHT;
     delay(200);
   }
